@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.newsapp.ui.Category.categoryFragement"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nac_About"
+        android:name="com.example.newsapp.ui.About.AboutFragment"
+        android:label="@string/menu_About"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_politic"
+        android:name="com.example.newsapp.ui.Category.politicCategory"
+        android:label="Business"
+        tools:layout="@layout/politic_category" />
+    <fragment
+        android:id="@+id/nav_economic"
+        android:name="com.example.newsapp.ui.Category.economicCategory"
+        android:label="Health"
+        tools:layout="@layout/economic_category" />
+    <fragment
+        android:id="@+id/nav_sport"
+        android:name="com.example.newsapp.ui.Category.sportCategory"
+        android:label="@string/sport"
+        tools:layout="@layout/sport_category" />
+    <fragment
+        android:id="@+id/nav_science"
+        android:name="com.example.newsapp.ui.Category.scienceCategory"
+        android:label="@string/science"
+        tools:layout="@layout/science_category" />
+</navigation>
